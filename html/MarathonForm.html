@@ -9,43 +9,43 @@
   <body>
     <h1>Race Registration!</h1>
     <form action="">
-      <p>
+      <div>
         <label for="first">First Name</label>
-        <input type="text" id="first" />
+        <input type="text" id="first" name="name" required/>
         <label for="last">Last Name</label>
-        <input type="text" id="last" />
-      </p>
+        <input type="text" id="last" name="name" required/>
+      </div>
       <p>Select a Race :</p>
-      <p>
+      <div>
         <input type="radio" name="race" id="5k" value="5k" />
         <label for="5k">Fun Run 5k</label>
-      </p>
-      <p>
+      </div>
+      <div>
         <input type="radio" name="race" id="Half" value="Half" />
         <label for="Half">Half Marathon</label>
-      </p>
-      <p>
+      </div>
+      <div>
         <input type="radio" name="race" id="Full" value="Full" />
         <label for="Full">Full Marathon</label>
-      </p>
-      <p>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required/>
+      </div>
+      <div>
         <label for="age">Select Age Group</label>
         <select name="age" id="age">
-            <option value="U18">under 18</option>
-            <option value="1830">18-30</option>
-            <option value="3050">30-50</option>
-            <option value="50+">50+</option>
+          <option value="U18">under 18</option>
+          <option value="1830">18-30</option>
+          <option value="3050">30-50</option>
+          <option value="50+">50+</option>
         </select>
-      </p>
-      <p>
-        <label for="email">Email</label>
-        <input type="email" id="email" />
-        <label for="password">Password</label>
-        <input type="password" id="password" />
-      </p>
-      <p>
+      </div>
+      <div>
         <input type="submit" value="Register!" />
-      </p>
+      </div>
     </form>
   </body>
 </html>
