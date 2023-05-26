@@ -82,6 +82,11 @@ p::first-line {
   color: purple;
 }
 
-::selection {
+p::selection {
   background-color: #fcbf49;
+}
+
+h1,
+h2 {
+  color: yellow;
 }
