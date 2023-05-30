@@ -9,24 +9,35 @@ h1 {
 #container {
   background-color: #003049;
   width: 90%;
-  height: 500px;
+  /* height: 500px; */
   margin: 0 auto;
   border: 5px solid #003049;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;  
+  /* flex-wrap: wrap; */
 }
 
 /* (flex-direction = main-axis 설정) 에 따라 justify-content 의 결과는 달라짐  */
 /* allign-content는 wrap / wrap-reverse가 적용된 상태에서만 사용가능 + 줄 바꿈이 없거나 단일 행 혹은 열에서도 변화 X*/
 
 #container div {
-    width: 200px;
-    height: 200px;
-    text-align: center;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  flex-basis: 600px;
 }
 
 /* div:nth-of-type(5) {
   align-self: flex-start;
 } */
+
+div:nth-of-type(1) {
+  flex-grow: 1;
+  flex-shrink: 3;
+}
+
+div:nth-of-type(5) {
+  flex-grow: 2;
+  flex-shrink: 0;
+}
