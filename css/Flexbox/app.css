@@ -13,10 +13,14 @@ h1 {
   margin: 0 auto;
   border: 5px solid #003049;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
 }
 
+/* (flex-direction = main-axis 설정) 에 따라 justify-content 의 결과는 달라짐  */
+
 #container div {
-    width: 200px;
+    width: 600px;
     height: 200px;
 }
