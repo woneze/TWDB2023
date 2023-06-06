@@ -47,7 +47,7 @@ switch (day) {
     break;
     case 6:
     case 7:
-        console.log ("WEEKEND!")''
+        console.log ("WEEKEND!");
     default:
         console.log("I DONT KNOW THAT!");
 }
