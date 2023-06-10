@@ -22,9 +22,22 @@
 // console.log(radius);
 // console.log(msg);
 
-for (let i = 0; i < 5; i++) {
-    let msg = 'sdasdsdas';
-    console.log(msg);
+// for (let i = 0; i < 5; i++) {
+//     let msg = 'sdasdsdas';
+//     console.log(msg);
+// }
+// console.log(msg)
+// console.log(i)
+
+function bankRobbery() {
+  const heroes = ["Spiderman", "Wolverine", "Black Panther", "Batwman"];
+  function cryForHelp() {
+    function inner() {
+      for (let hero of heroes) {
+        console.log(`PLEASE HELP US, ${hero.toUpperCase()}`);
+      }
+    }
+    inner();
+  }
+  cryForHelp();
 }
-console.log(msg)
-console.log(i)
