@@ -5,10 +5,6 @@ const h1 = document.querySelector("h1");
 //   console.log("safsdfsdafsad");
 // });
 
-input.addEventListener("input", function () {
-  const username = input.value;
-  h1.innerText = `Welcome, ${username}`;
-  if (username.length === 0) {
-    h1.innerText = "Enter Your Username";
-  }
+input.addEventListener("input", function (e) {
+  h1.innerText = input.value;
 });
